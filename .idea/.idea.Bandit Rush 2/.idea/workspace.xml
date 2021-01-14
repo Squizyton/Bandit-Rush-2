@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementTemplate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementTemplate.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +17,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementScriptObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementScriptObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementTemplate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/AchievementTemplate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1n2oI99IZvNOptAqBkwoF3Z6Nxg" />
@@ -65,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610597464887</updated>
-      <workItem from="1610597468023" duration="2976000" />
+      <workItem from="1610597468023" duration="5077000" />
     </task>
     <servers />
   </component>
