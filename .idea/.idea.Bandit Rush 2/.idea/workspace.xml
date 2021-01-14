@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50b0ed34-823b-46df-a520-e240b60fc56c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/AchievementTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/AchievementTemplate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -70,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610597464887</updated>
-      <workItem from="1610597468023" duration="5925000" />
+      <workItem from="1610597468023" duration="7303000" />
+      <workItem from="1610647858376" duration="673000" />
     </task>
     <servers />
   </component>

@@ -6,15 +6,26 @@ namespace Achievements
 {
     public class TestAchievement : MonoBehaviour
     {
-        public AchievementTemplate test;
-
+        public List<AchievementTemplate> testList = new List<AchievementTemplate>();
         public Achievement testAchievement;
 
-        private Dictionary<string, Achievement> achievements = new Dictionary<string, Achievement>();
+        private Dictionary<AchievementCondition, List<Achievement> > achievements = new Dictionary<AchievementCondition,List<Achievement>>();
         private void Start()
         {
-            testAchievement = new Achievement(test.title, test.icon, test.description, test.obj, test.amount, test.condition);
-            achievements.Add(testAchievement.name, testAchievement);
+            var tempList = new List<Achievement>();
+            
+            foreach (AchievementTemplate test in testList)
+            {
+                switch (test.condition)
+                {
+                    case AchievementCondition.Collect:
+                        testAchievement = new Achievement(test.title, test.icon, test.description, test.obj, test.amount,
+                            test.condition);
+                        tempList.Add(testAchievement);
+                        break;
+                }
+            }
+            achievements.Add(testAchievement.condition,tempList);
         }
 
         // Update is called once per frame
@@ -22,20 +33,27 @@ namespace Achievements
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                CheckAchievement(AchievementTemplate.AchievementCondition.Kill, "boar", 1);
+                CheckAchievement(AchievementCondition.Kill, "boar", 1);
             }
 
         }
         
-        void CheckAchievement(AchievementTemplate.AchievementCondition condition,string name, int amount)
+        void CheckAchievement(AchievementCondition condition,string name, int amount)
         {
-            if (achievements.TryGetValue(name, out var achievement))
+            if (achievements.TryGetValue(condition, out var achievementList))
             {
-                if (achievement.condition == condition && !achievement.completed)
+                foreach (Achievement achievement in achievementList)
                 {
-                    achievement.
+                    if (achievement.condition == condition && achievement.name == name)
+                    {
+                        if (!achievement.completed)
+                            achievement.amountLeft -= amount;
+                        if (achievement.amountLeft <= 0)
+                        {
+                            achievement.completed = true;
+                        }
+                    }
                 }
-                else return;
             }
         }
     }

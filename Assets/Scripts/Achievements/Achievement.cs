@@ -12,12 +12,12 @@ public class Achievement
     public bool completed;
     
     //Conditions
-    public AchievementTemplate.AchievementCondition condition;
+    public AchievementCondition condition;
     public GameObject RelavantGameObject;
     public int amountLeft;
     
     
-    public Achievement(string name, Sprite icon, string description, GameObject obj, int amount, AchievementTemplate.AchievementCondition condition)
+    public Achievement(string name, Sprite icon, string description, GameObject obj, int amount, AchievementCondition condition)
     {
         this.name = name;
         this.icon = icon;
