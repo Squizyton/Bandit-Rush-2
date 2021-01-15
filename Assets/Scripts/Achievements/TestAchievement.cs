@@ -10,22 +10,10 @@ namespace Achievements
         public Achievement testAchievement;
 
         private Dictionary<AchievementCondition, List<Achievement> > achievements = new Dictionary<AchievementCondition,List<Achievement>>();
+        private List<Achievement> completedAchievements = new List<Achievement>();
+            
         private void Start()
         {
-            var tempList = new List<Achievement>();
-            
-            foreach (AchievementTemplate test in testList)
-            {
-                switch (test.condition)
-                {
-                    case AchievementCondition.Collect:
-                        testAchievement = new Achievement(test.title, test.icon, test.description, test.obj, test.amount,
-                            test.condition);
-                        tempList.Add(testAchievement);
-                        break;
-                }
-            }
-            achievements.Add(testAchievement.condition,tempList);
         }
 
         // Update is called once per frame
@@ -35,7 +23,6 @@ namespace Achievements
             {
                 CheckAchievement(AchievementCondition.Kill, "boar", 1);
             }
-
         }
         
         void CheckAchievement(AchievementCondition condition,string name, int amount)
@@ -44,7 +31,7 @@ namespace Achievements
             {
                 foreach (Achievement achievement in achievementList)
                 {
-                    if (achievement.condition == condition && achievement.name == name)
+                    if (achievement.condition == condition && achievement.name.ToLower() == name)
                     {
                         if (!achievement.completed)
                             achievement.amountLeft -= amount;
@@ -52,6 +39,8 @@ namespace Achievements
                         {
                             achievement.completed = true;
                         }
+
+                        break;
                     }
                 }
             }

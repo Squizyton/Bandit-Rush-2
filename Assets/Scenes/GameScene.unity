@@ -317,7 +317,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21be3f08bbc3c44bb3038d81e54c191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 11400000, guid: 3324571232d5ec24984d88f77a117e56, type: 2}
+  instance: {fileID: 0}
+  startAchievements:
+  - {fileID: 11400000, guid: 3324571232d5ec24984d88f77a117e56, type: 2}
+  - {fileID: 11400000, guid: c091cc5a491281042a7b14c877d118ad, type: 2}
 --- !u!1 &595350075
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +350,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48f135160a025f04bba82c9dd213755b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 11400000, guid: 3324571232d5ec24984d88f77a117e56, type: 2}
+  testList: []
+  testAchievement:
+    name: 
+    icon: {fileID: 0}
+    description: 
+    completed: 0
+    condition: 0
+    RelavantGameObject: {fileID: 0}
+    amountLeft: 0
 --- !u!4 &595350077
 Transform:
   m_ObjectHideFlags: 0
