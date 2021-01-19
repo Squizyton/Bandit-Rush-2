@@ -15,8 +15,8 @@ namespace Achievements
         public GameObject achieNotification;
 
         //Would it be more efficent to make a custom dictionary class??????
-        private SerializedDictionary<string, Achievement>
-            achievements = new SerializedDictionary<string, Achievement>();
+        private Dictionary<string, Achievement>
+            achievements = new Dictionary<string, Achievement>();
 
         public GameObject canvas;
 
