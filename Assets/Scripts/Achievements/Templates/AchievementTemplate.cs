@@ -18,6 +18,7 @@ namespace Achievements
         
         public Sprite icon;
         public string title;
+        public string achievementTitle;
         public string description;
         public AchievementCondition condition;
         public GameObject obj;

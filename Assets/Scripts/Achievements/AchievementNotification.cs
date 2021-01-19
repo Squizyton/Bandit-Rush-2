@@ -14,4 +14,14 @@ public class AchievementNotification : MonoBehaviour
    {
       Destroy(this.gameObject);
    }
+
+
+   public void UpdateAchievement(Sprite icon, string title, string description)
+   {
+      Debug.Log(title);
+      Debug.Log(description);
+      this.icon.sprite = icon;
+      this.title.SetText(title);
+      this.description.SetText(description);
+   }
 }

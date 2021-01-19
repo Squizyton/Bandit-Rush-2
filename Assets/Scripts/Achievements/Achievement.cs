@@ -10,16 +10,17 @@ public class Achievement
     public Sprite icon;
     public string description;
     public bool completed;
-    
+    public string achievementTitle;
     //Conditions
     public AchievementCondition condition;
     public GameObject RelavantGameObject;
     public int amountLeft;
     public int amountHave;
     
-    public Achievement(string name, Sprite icon, string description, GameObject obj, int amount, AchievementCondition condition)
+    public Achievement(string name,string achievementTitle, Sprite icon, string description, GameObject obj, int amount, AchievementCondition condition)
     {
         this.name = name;
+        this.achievementTitle = achievementTitle;
         this.icon = icon;
         this.description = description;
         this.condition = condition;

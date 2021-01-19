@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   title: 
+  achievementTitle: 
   description: 
   condition: 0
   obj: {fileID: 0}
