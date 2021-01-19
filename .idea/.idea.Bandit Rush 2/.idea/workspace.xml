@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b0ed34-823b-46df-a520-e240b60fc56c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bandit Rush 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/Kill Boars.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/Kill Boars.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/New Achievement.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/New Achievement.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementNotification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementNotification.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +28,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementScriptObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementTemplate.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/Templates/AchievementTemplate.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/TestAchievement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/Achievement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementNotification.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Achievements/AchievementManager.cs" />
     </changedPaths>
   </component>
@@ -79,6 +79,7 @@
       <workItem from="1610647858376" duration="858000" />
       <workItem from="1610648746163" duration="350000" />
       <workItem from="1610649108725" duration="4169000" />
+      <workItem from="1611071783284" duration="2496000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ public class Achievement
     public AchievementCondition condition;
     public GameObject RelavantGameObject;
     public int amountLeft;
-    
+    public int amountHave;
     
     public Achievement(string name, Sprite icon, string description, GameObject obj, int amount, AchievementCondition condition)
     {

@@ -11,9 +11,12 @@ namespace Achievements
 
         public List<AchievementTemplate> startAchievements;
         private List<Achievement> completedAchievements = new List<Achievement>();
-        
+
+        public GameObject achieNotification;
         //Would it be more efficent to make a custom dictionary class??????
         private SerializedDictionary<string, Achievement> achievements = new SerializedDictionary<string, Achievement>();
+
+        public GameObject canvas;
         private void Start()
         {
             if (instance != null) instance = this;
@@ -25,18 +28,17 @@ namespace Achievements
         
         void CheckAchievement(AchievementCondition condition,string name, int amount)
         {
-            Debug.Log("Attempting to find thing");
             if (achievements.TryGetValue(name.ToLower(), out var achievement))
             {
                 Debug.Log("Found " + achievement.name);
                 if (achievement.condition == condition && !achievement.completed)
                 {
-                    achievement.amountLeft -= amount;
-                    Debug.Log(achievement.name + "has " + achievement.amountLeft + " left");
-                    if (achievement.amountLeft <= 0)
+                    achievement.amountHave += amount;
+                    if (achievement.amountHave >= achievement.amountLeft)
                     {
                         achievement.completed = true;
                         //Send AchievementNotification
+                        SendNotification(achievement);
                     }
                 }
             }
@@ -45,7 +47,13 @@ namespace Achievements
 
         void SendNotification(Achievement achievement)
         {
-            Debug.Log(achievement.name + " has been completed, woo");
+            var notification = Instantiate(achieNotification, achieNotification.transform.position,
+                achieNotification.transform.rotation,canvas.transform);
+            var notificationElements = GetComponent<AchievementNotification>();
+            notificationElements.title.SetText(achievement.name);
+            notificationElements.description.SetText(achievement.description);
+            notificationElements.icon.sprite = achievement.icon;
+            
         }
 
         // Test purposes
