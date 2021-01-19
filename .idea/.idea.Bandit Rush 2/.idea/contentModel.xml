@@ -14,6 +14,7 @@
           <e p="Achievements" t="Include">
             <e p="Achievement.cs" t="Include" />
             <e p="AchievementManager.cs" t="Include" />
+            <e p="AchievementNotification.cs" t="Include" />
             <e p="Templates" t="Include">
               <e p="AchievementTemplate.cs" t="Include" />
             </e>
