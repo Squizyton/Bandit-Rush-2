@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Collect Coins
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
-  title: Collect All The Fucking Coins
+  title: collect Coins
+  achievementTitle: Collect All The Fucking Coins
   description: You collected coins. Yay
   condition: 2
   obj: {fileID: 0}
