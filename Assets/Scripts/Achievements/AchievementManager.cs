@@ -14,6 +14,7 @@ namespace Achievements
 
         public GameObject achieNotification;
 
+       
         //Would it be more efficent to make a custom dictionary class??????
         private Dictionary<string, Achievement>
             achievements = new Dictionary<string, Achievement>();
@@ -57,17 +58,6 @@ namespace Achievements
                 notificationElements.UpdateAchievement(achievement.icon, achievement.achievementTitle,
                     achievement.description);
         }
-
-        // Test purposes
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                CheckAchievement(AchievementCondition.Kill, "kill boars", 1);
-            }
-        }
-
-
         #region Saving&Loading
 
         void OnApplicationQuit()
@@ -87,7 +77,7 @@ namespace Achievements
                 var achievement = new Achievement(temp.name.ToLower(), temp.achievementTitle, temp.icon,
                     temp.description, temp.obj, temp.amount,
                     temp.condition);
-                Debug.Log(achievement.name);
+                //Debug.Log(achievement.name);
                 x++;
                 achievements.Add(achievement.name, achievement);
             }
